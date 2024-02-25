@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <scrfipt src="script.js"></scrfipt>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1 style="color:black">Calculator</h1>
+        <h2>By Kunal</h2>
+        <h3><a href="https://github.com/kunalbondale" target="_blank">github.com/kunalbondale</a></h3>
+
+        <div id="display" class="display">0</div>
+        
+        <div class="buttons">
+            <div class="row">
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="clearDisplay()" class="operator" style="background-color: darkslategray; color:black">AC</button>
+            </div>
+            
+            <div class="row">
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="operate('/')">/</button>
+            </div>
+            
+            <div class="row">
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="operate('*')">*</button>
+            </div>
+            
+            <div class="row">
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculateResult()">=</button>
+                <button onclick="operate('-')">-</button>
+            </div>
+
+            <div class="row">
+                <button class="double" onclick="operate('+')">+</button>
+                <text style="color:black"> CalcKu</text>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
